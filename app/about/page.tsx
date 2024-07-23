@@ -1,7 +1,16 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Camera, Book, Users, Award } from "lucide-react";
+import {
+  Camera,
+  Book,
+  Users,
+  Award,
+  Building,
+  Calendar,
+  WifiIcon,
+  Droplet,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
@@ -17,6 +26,39 @@ const About = () => {
   const staggerChildren = {
     visible: { transition: { staggerChildren: 0.1 } },
   };
+
+  const schoolDetails = [
+    {
+      icon: <Building className="w-6 h-6 text-blue-600" />,
+      title: "Established",
+      description: "1954",
+    },
+    {
+      icon: <Users className="w-6 h-6 text-blue-600" />,
+      title: "Type",
+      description: "Co-educational",
+    },
+    {
+      icon: <Book className="w-6 h-6 text-blue-600" />,
+      title: "Grades",
+      description: "1 to 12",
+    },
+    {
+      icon: <WifiIcon className="w-6 h-6 text-blue-600" />,
+      title: "Medium",
+      description: "English",
+    },
+    {
+      icon: <Calendar className="w-6 h-6 text-blue-600" />,
+      title: "Session Starts",
+      description: "April",
+    },
+    {
+      icon: <Droplet className="w-6 h-6 text-blue-600" />,
+      title: "Drinking Water",
+      description: "Tap Water",
+    },
+  ];
 
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -66,7 +108,107 @@ const About = () => {
             ))}
           </div>
         </motion.section>
+        <motion.section
+          className="mb-20"
+          initial="hidden"
+          animate="visible"
+          variants={staggerChildren}
+        >
+          <motion.h2
+            className="text-4xl font-bold mb-12 text-center text-blue-600"
+            variants={fadeIn}
+          >
+            School Details
+          </motion.h2>
+          <Card>
+            <CardContent className="pt-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
+                VCGL RAVANGLA SSS was established in 1954 and is managed by the
+                Department of Education. Located in the rural area of RAVANGLA
+                block, SOUTH SIKKIM district of Sikkim, our school provides
+                quality education from Grades 1 to 12, including an attached
+                pre-primary section.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {schoolDetails.map((detail, index) => (
+                  <motion.div key={index} variants={fadeIn}>
+                    <Card className="h-full">
+                      <CardContent className="flex items-center p-4">
+                        <div className="mr-4">{detail.icon}</div>
+                        <div>
+                          <h3 className="font-semibold">{detail.title}</h3>
+                          <p className="text-sm text-gray-600">
+                            {detail.description}
+                          </p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </motion.section>
 
+        <motion.section
+          className="mb-20"
+          initial="hidden"
+          animate="visible"
+          variants={staggerChildren}
+        >
+          <motion.h2
+            className="text-4xl font-bold mb-12 text-center text-blue-600"
+            variants={fadeIn}
+          >
+            Our Facilities
+          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <Building className="w-12 h-12 text-blue-600" />,
+                title: "10 Classrooms",
+                description: "All in good condition",
+              },
+              {
+                icon: <Book className="w-12 h-12 text-blue-600" />,
+                title: "Library",
+                description: "300 books available",
+              },
+              {
+                icon: <Users className="w-12 h-12 text-blue-600" />,
+                title: "Separate Toilets",
+                description: "2 for boys, 2 for girls",
+              },
+              {
+                icon: <Camera className="w-12 h-12 text-blue-600" />,
+                title: "Computer Lab",
+                description: "12 functional computers",
+              },
+              {
+                icon: <Award className="w-12 h-12 text-blue-600" />,
+                title: "Playground",
+                description: "For sports and activities",
+              },
+              {
+                icon: <Droplet className="w-12 h-12 text-blue-600" />,
+                title: "Mid-day Meal",
+                description: "Prepared on premises",
+              },
+            ].map((facility, index) => (
+              <motion.div key={index} variants={fadeIn}>
+                <Card className="h-full">
+                  <CardContent className="pt-6 flex flex-col items-center text-center h-full">
+                    <div className="mb-4">{facility.icon}</div>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {facility.title}
+                    </h3>
+                    <p className="text-gray-600">{facility.description}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
         <motion.section
           className="mb-20"
           initial="hidden"
@@ -124,7 +266,7 @@ const About = () => {
           <Card>
             <CardContent className="pt-6">
               <p className="text-gray-700 leading-relaxed">
-                Founded in 1975, PM Shri VCGL Senior Secondary School has a rich
+                Founded in 1954, PM Shri VCGL Senior Secondary School has a rich
                 history of serving the community of Ravongla and adapting to the
                 changing needs of education over the decades. From humble
                 beginnings with just a handful of students, we have grown into a
