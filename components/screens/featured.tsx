@@ -85,7 +85,7 @@ const FeaturedPrograms: React.FC = () => {
             className="mt-4 max-w-2xl mx-auto text-xl text-gray-600"
           >
             Discover our innovative and comprehensive academic programs designed
-            to nurture every student's potential.
+            to nurture every students potential.
           </motion.p>
         </motion.div>
 

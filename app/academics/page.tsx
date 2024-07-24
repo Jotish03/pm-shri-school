@@ -184,8 +184,8 @@ const AcademicsPage = () => {
         <Card>
           <CardContent className="p-6">
             <p className="text-lg text-gray-800 mb-4">
-              Interested in learning more about our academic programs? We'd love
-              to hear from you!
+              Interested in learning more about our academic programs? We&apos;d
+              love to hear from you!
             </p>
             <Button>Contact Us</Button>
           </CardContent>

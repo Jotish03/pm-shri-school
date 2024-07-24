@@ -40,10 +40,10 @@ const formSchema = z.object({
     message: "Candidate name must be at least 2 characters.",
   }),
   fatherName: z.string().min(2, {
-    message: "Father's name must be at least 2 characters.",
+    message: "Father name must be at least 2 characters.",
   }),
   motherName: z.string().min(2, {
-    message: "Mother's name must be at least 2 characters.",
+    message: "Mother name must be at least 2 characters.",
   }),
   gender: z.enum(["male", "female", "other"], {
     required_error: "Please select a gender.",
@@ -155,10 +155,7 @@ const AdmissionForm: React.FC = () => {
                     <FormItem>
                       <FormLabel>Candidate Name</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Enter candidate's name"
-                          {...field}
-                        />
+                        <Input placeholder="Enter candidates name" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -169,9 +166,9 @@ const AdmissionForm: React.FC = () => {
                   name="fatherName"
                   render={({ field }) => (
                     <FormItem className="mt-4">
-                      <FormLabel>Father's Name</FormLabel>
+                      <FormLabel>Father Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter father's name" {...field} />
+                        <Input placeholder="Enter father name" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -182,9 +179,9 @@ const AdmissionForm: React.FC = () => {
                   name="motherName"
                   render={({ field }) => (
                     <FormItem className="mt-4">
-                      <FormLabel>Mother's Name</FormLabel>
+                      <FormLabel>Mother Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter mother's name" {...field} />
+                        <Input placeholder="Enter mother name" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -298,7 +295,7 @@ const AdmissionForm: React.FC = () => {
                   name="contactNumber"
                   render={({ field }) => (
                     <FormItem className="mt-4">
-                      <FormLabel>Parents/Guardian Contact Number</FormLabel>
+                      <FormLabel>Parents Contact Number</FormLabel>
                       <FormControl>
                         <Input placeholder="Enter contact number" {...field} />
                       </FormControl>

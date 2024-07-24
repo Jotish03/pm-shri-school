@@ -47,13 +47,13 @@ const Admission = () => {
       icon: <PenTool className="h-6 w-6" />,
       title: "Attend an interview (if applicable)",
       description:
-        "Some programs may require an interview to assess the applicant's suitability and motivation.",
+        "Some programs may require an interview to assess the applicants suitability and motivation.",
     },
     {
       icon: <Award className="h-6 w-6" />,
       title: "Complete entrance exams (if required)",
       description:
-        "Certain courses may have entrance exams to evaluate the applicant's academic readiness.",
+        "Certain courses may have entrance exams to evaluate the applicants academic readiness.",
     },
   ];
 
@@ -136,7 +136,7 @@ const Admission = () => {
         <motion.div variants={fadeIn} className="text-center">
           <p className="text-gray-700">
             We look forward to welcoming new students to our school community.
-            If you have any questions about the admission process, please don't
+            If you have any questions about the admission process, please dont
             hesitate to contact our admissions office.
           </p>
         </motion.div>

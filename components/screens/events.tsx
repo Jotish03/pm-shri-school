@@ -85,7 +85,7 @@ const UpcomingEvents: React.FC = () => {
             variants={itemVariants}
             className="mt-4 max-w-2xl mx-auto text-xl text-gray-600"
           >
-            Stay informed about our school's activities and join us in
+            Stay informed about our school&apos;s activities and join us in
             celebrating learning and community.
           </motion.p>
         </motion.div>

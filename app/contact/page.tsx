@@ -32,8 +32,8 @@ const ContactPage = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 mb-6">
-                We'd love to hear from you. Please use the contact information
-                below or fill out the form to get in touch with us.
+                We&apos;d love to hear from you. Please use the contact
+                information below or fill out the form to get in touch with us.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center">
