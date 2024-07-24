@@ -6,13 +6,13 @@ import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 
 const sliderImages = [
   {
-    src: "/images/sliderone.jpg",
-    alt: "School Building",
-    caption: "Innovative Projects",
-    description: "Empowering students with cutting-edge learning experiences",
+    src: "/images/school-group9.jpg",
+    alt: "School Track and Field",
+    caption: "Running Towards Success",
+    description: "Fostering a culture of fitness and perseverance on the track",
   },
   {
-    src: "/images/slidertwo.jpg",
+    src: "/images/school-group1.jpg",
     alt: "Students in Classroom",
     caption: "Quality Education for All",
     description: "Providing equal opportunities for every student to excel",
@@ -70,7 +70,7 @@ const Hero = () => {
           <img
             src={sliderImages[currentIndex].src}
             alt={sliderImages[currentIndex].alt}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
           />
           <div className="absolute inset-0 bg-black bg-opacity-60" />
         </motion.div>

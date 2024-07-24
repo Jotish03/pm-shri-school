@@ -56,9 +56,113 @@ const images: ImageData[] = [
     src: "/images/acatwo.jpg",
     alt: "Gallery image 6",
     caption: "Vibrant performances at the school's cultural fest",
-    category: "Culture",
+    category: "School Culture",
   },
-  // Add more images as needed
+  {
+    id: 7,
+    src: "/images/school-group10.jpg",
+    alt: "Gallery image 7",
+    caption: "Performances at the school's cultural fest",
+    category: "Sports",
+  },
+  {
+    id: 8,
+    src: "/images/school-group9.jpg",
+    alt: "Gallery image 8",
+    caption:
+      " The grand parade of athletes and the lighting of the sports torch",
+    category: "Sports",
+  },
+  {
+    id: 9,
+    src: "/images/school-studsiz.jpg",
+    alt: "Gallery image 9",
+    caption: "A nail-biting finish with a photo finish to determine the winner",
+    category: "Sports",
+  },
+  {
+    id: 10,
+    src: "/images/school-group14.jpg",
+    alt: "Gallery image 10",
+    caption: " Thrilling baton exchanges and team spirit on display",
+    category: "Sports",
+  },
+  {
+    id: 11,
+    src: "/images/school-group22.jpg",
+    alt: "Gallery image 11",
+    caption: " Spectacular leaps and a new school record",
+    category: "Sports",
+  },
+  {
+    id: 12,
+    src: "/images/school-group11.jpg",
+    alt: "Gallery image 12",
+    caption: " Intense competition and cheering from the sidelines",
+    category: "Sports",
+  },
+  {
+    id: 13,
+    src: "/images/school-group15.jpg",
+    alt: "Gallery image 13",
+    caption: " A festive event with alumni and current students",
+    category: "School Culture",
+  },
+  {
+    id: 14,
+    src: "/images/school-group16.jpg",
+    alt: "Gallery image 14",
+    caption: "Cultural Day: Students showcase traditional outfits and customs",
+    category: "School Culture",
+  },
+  {
+    id: 15,
+    src: "/images/school-group21.jpg",
+    alt: "Gallery image 15",
+    caption:
+      "Student Council Elections: Campaigns and voting for student leaders",
+    category: "School Culture",
+  },
+  {
+    id: 16,
+    src: "/images/school-studfives.jpg",
+    alt: "Gallery image 16",
+    caption:
+      "Community Service Day: Students participating in local community projects",
+    category: "School Culture",
+  },
+  {
+    id: 17,
+    src: "/images/school-studone.jpg",
+    alt: "Gallery image 17",
+    caption:
+      "International Food Festival: A celebration of diverse cuisines and cultures",
+    category: "School Culture",
+  },
+  {
+    id: 18,
+    src: "/images/school-group2.jpg",
+    alt: "Gallery image 18",
+    caption:
+      "Students enjoying a nutritious meal and chatting with friends in the cafeteria",
+    category: "Academics",
+  },
+  {
+    id: 19,
+    src: "/images/school-group7.jpg",
+    alt: "Gallery image 19",
+    caption:
+      " School Lunch Time: Students enjoying a nutritious meal together in the cafeteria",
+    category: "Academics",
+  },
+  {
+    id: 20,
+    src: "/images/school-group19.jpg",
+    alt: "Gallery image 20",
+    caption:
+      "Morning Yoga Session: Students participating in a relaxing and rejuvenating yoga class",
+    category: "Academics",
+  },
 ];
 
 const categories = Array.from(new Set(images.map((img) => img.category)));

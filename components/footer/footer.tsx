@@ -28,7 +28,7 @@ const Footer = () => {
               PM Shri VCGL Senior Secondary School
             </h3>
             <p className="mb-4 text-gray-300">
-              Providing quality education since 1975
+              Providing quality education since 1954
             </p>
             <p className="mb-4 text-gray-300">Ravongla, South Sikkim</p>
             <div className="flex space-x-4">

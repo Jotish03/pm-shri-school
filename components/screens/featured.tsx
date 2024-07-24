@@ -25,7 +25,7 @@ const programs: Program[] = [
     title: "STEM Excellence",
     description:
       "Cutting-edge curriculum in Science, Technology, Engineering, and Mathematics.",
-    image: "/images/stemi.jpg",
+    image: "/images/school-group1.jpg",
   },
   {
     id: 2,
@@ -36,10 +36,10 @@ const programs: Program[] = [
   },
   {
     id: 3,
-    title: "Global Languages",
+    title: "Shiksha Saptah",
     description:
-      "Comprehensive language programs to prepare students for a globalized world.",
-    image: "/images/lang.jpg",
+      "This week-long celebration aims to reflect on the transformative reforms introduced by NEP 2020 ",
+    image: "/images/school-group20.jpg",
   },
 ];
 

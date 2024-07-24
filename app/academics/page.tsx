@@ -126,7 +126,7 @@ const AcademicsPage = () => {
               icon: Computer,
               description:
                 "Interactive learning environments equipped with the latest technology.",
-              image: "/images/acaone.jpg",
+              image: "/images/school-group13s.jpg",
             },
             {
               value: "library",
@@ -150,7 +150,7 @@ const AcademicsPage = () => {
               icon: Diameter,
               description:
                 "Various sports facilities for physical education and extracurricular activities.",
-              image: "/images/lang.jpg",
+              image: "/images/school-group22.jpg",
             },
           ].map((facility) => (
             <TabsContent key={facility.value} value={facility.value}>

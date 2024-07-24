@@ -198,7 +198,7 @@ const Welcome: React.FC = () => {
                     title: "Extracurricular Activities",
                     description:
                       "We offer a wide range of clubs and activities to nurture diverse talents and interests.",
-                    image: "/images/acatwo.jpg",
+                    image: "/images/school-group10.jpg",
                   },
                   {
                     title: "Community Engagement",
